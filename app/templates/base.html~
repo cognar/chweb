@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<style type="text/css">
+			* {
+				margin: 0;			
+			}
+			body{
+				background-image: url("{{ bgImageUrl }}");
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			a {
+				color: #000000;
+				text-decoration: none;
+    		}
+			#navbar{
+				
+				border-bottom: solid;
+				border-width: 2px;
+				height: 40px;
+				background-color: #FFFFFF;
+				opacity: 0.3;	
+				overflow-y: hidden;
+			}
+			#navbar-buttons{
+				padding-top: 10px;
+				margin: 0 auto;
+				text-align: center;
+				width: 200px;
+				height: 100%;
+				float: left;
+			}
+			#navbar-buttons:hover{
+				background-color: #FFFFFF;
+				opacity: 0.3;			
+			}
+			#plantcont{
+				background-color: #FFFFFF;
+				opacity: 0.8;
+				border-radius: 15px;
+				margin: 1%;
+				padding: 5px;
+				width: 45%;
+				height: auto;
+				float: left;
+			}
+			#plantmain{
+				background-color: #{{ bgColor }};
+				opacity: 0.8;
+				width: 90%;
+				margin: 0 auto;
+				margin-top: 12%;
+				margin-bottom: 10%;
+				text-align: center;
+				padding: 25px;
+				margin-left: 5%
+				display: inline-block;
+				height: 100%;
+				overflow: visible;				
+			}
+			#splash-block{
+				background-color: #{{ bgColor }};
+				opacity: 0.8;
+				width: 30%;
+				margin: 0 auto;
+				margin-top: 12%;
+				margin-bottom: 10%;
+				text-align: center;
+				padding: 25px;
+				height: auto;
+				overflow: visible;
+			}
+			footer{
+				text-align: center;
+				text-size: 8px; 
+				background-color: #{{ fColor }};
+				opacity: 0.4;
+				margin: 0;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				border-top: solid;
+				border-width: 2px;
+			}
+		</style>
+		{% if title %}
+			<title> {{ title }} </title>
+		{% else %}
+			<title> Shet, forgot a title </title>
+		{% endif %}
+	</head>
+	<body>
+		<div id="navbar"> 
+			<div id="navbar-buttons" style="width: calc(50% - 600px)"></div>
+			<a href="/index" >
+			<div id="navbar-buttons">Home</div></a>
+			<a href="/plants" >			
+			<div id="navbar-buttons">Plant Shit</div></a>
+			<a href="/index" >
+			<div id="navbar-buttons">Even more Shit</div></a>			
+			<!--<table>
+				<tr>Home</tr>
+				<tr>Other Shit</tr>
+				<tr>Even More shit</tr>			
+			</table>-->
+		</div>
+		{% block content %}{% endblock %}	
+	</body>
+	<footer>
+			© Cognar {{ year }}
+	</footer>	
+</html>

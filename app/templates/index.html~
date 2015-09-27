@@ -1,0 +1,20 @@
+{% extends "base.html" %}	
+		{% block content %}
+			<div id="splash-block">
+				
+
+Aenean pharetra diam eget elit ornare consequat. Aliquam justo dolor, 
+ultrices eu ligula id, euismod tincidunt quam. Nulla scelerisque finibus 
+urna, et ultricies massa venenatis sit amet. Quisque sollicitudin volutpat 
+massa, vel laoreet lorem. Ut quis nisi dui. Vestibulum interdum hendrerit 
+aliquet. Ut dignissim tincidunt lectus, in vehicula lorem sodales a. 
+Morbi auctor scelerisque tincidunt. Proin dolor massa, auctor fringilla 
+enim ac, aliquet convallis erat. Nam auctor porttitor tellus, eget 
+volutpat odio egestas sit amet. Suspendisse ut turpis ac magna 
+malesuada dignissim in sed enim. Fusce dictum urna a tincidunt placerat. 
+Quisque at euismod felis.
+
+Suspendisse potenti. Donec id cursus turpis, malesuada vestibulum mi. 
+Etiam ac pulvinar ante. Suspendisse suscipit elit id purus tempor bibendum. 
+Ut sed lacus tincidunt felis tempus hendrerit. 			</div>
+		{% endblock %}
