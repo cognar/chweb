@@ -7,7 +7,7 @@
 				margin: 0;
 			}
 			body{
-				background-image: url("{{ bgImageUrl }}");
+				background-image: url("/static/images/2.jpg");
 				background-attachment: fixed;
 				background-repeat: no-repeat;
 				background-size: cover;
@@ -50,7 +50,7 @@
                 margin-left:2%;
 			}
 			#plantmain{
-				background-color: #{{ bgColor }};
+				background-color: #DAC9C8;
 				opacity: 0.8;
 				width: 70%;
 				margin: 0 auto;
@@ -64,9 +64,9 @@
 				overflow: hidden;
 			}
 			#splash-block{
-				background-color: #{{ bgColor }};
+				background-color: #DAC9C8;
 				opacity: 0.8;
-				width: 30%;
+				width: 60%;
 				margin: 0 auto;
 				margin-top: 12%;
 				margin-bottom: 10%;
@@ -78,7 +78,7 @@
 			footer{
 				text-align: center;
 				text-size: 8px;
-				background-color: #{{ fColor }};
+				background-color: #D3D599;
 				opacity: 0.4;
 				margin: 0;
 				bottom: 0px;
@@ -87,6 +87,13 @@
 				border-top: solid;
 				border-width: 2px;
 			}
+            p{
+                vertical-align: text-top;
+                width: 25%;
+                margin: 2%;
+                display: inline-block;
+                text-align: left;
+            }
 		</style>
 		{% if title %}
 			<title> {{ title }} </title>
